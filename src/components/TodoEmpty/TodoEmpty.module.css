@@ -1,0 +1,32 @@
+.contentList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.contentList img {
+  margin: 4rem 0 1rem;
+}
+
+.contentList strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--gray-300);
+}
+
+.contentList span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--gray-300);
+}
+
+.contentList > div {
+  text-align: center;
+}
