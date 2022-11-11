@@ -49,7 +49,7 @@ desenvolvimento da capacidade de resolução da problemática e outros.
 $ git clone https://github.com/joalissongomes1994/todo-list-ts.git
 # ou use a opção de download.
 
-# Acesse a pasta dtmoney
+# Acesse a pasta do projeto
 $ cd todo-list-ts
 
 # Instale as dependências
@@ -62,7 +62,7 @@ $ yarn dev
 ou
 $ npm run dev
 
-# Acesse http://localhost:3000 no seu navagador
+# Acesse clicando no link que aparecerá no seu terminal
 ```
 
 
