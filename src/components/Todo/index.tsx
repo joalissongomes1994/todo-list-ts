@@ -21,6 +21,15 @@ export function Todo() {
     ])
   }
 
+  function handleClickComplete(id: string) {
+    const newTasks = tasks.map(item => {
+      if(item.id === id) item.isComplete = !item.isComplete;
+      return item;
+    })
+
+    setTasks(newTasks);
+  }
+
   return(
     <div className={style.container}>
       <TaskForm onHandleCreateTask={handleCreateTask} />
@@ -39,7 +48,13 @@ export function Todo() {
 
       {tasks.length === 0 
         ? <TodoEmpty /> 
-        : tasks.map(task => <TaskItem key={task.id} taskData={task}/>)
+        : tasks.map(task => (
+          <TaskItem 
+            key={task.id} 
+            taskData={task}
+            onHandleClickComplete={handleClickComplete}
+          />
+        ))
       }
     </div>
   )
