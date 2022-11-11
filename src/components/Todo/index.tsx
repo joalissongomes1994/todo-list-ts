@@ -9,6 +9,9 @@ import style from "./Todo.module.css";
 
 export function Todo() {
   const [tasks, setTasks] = useState<ITask[]>([]);
+  const taskProgress = tasks.reduce((accumulator, currentValue) => {
+    return currentValue.isComplete ? ++accumulator : accumulator
+  }, 0)
 
   function handleCreateTask(task: string) {
     setTasks(state => [
@@ -47,7 +50,9 @@ export function Todo() {
         
           <strong className={style.done}>
             Concluidas
-            <span>0</span>
+            <span>{taskProgress === 0
+              ? "0" 
+              : `${taskProgress} de ${tasks.length}`}</span>
           </strong>
         </div>
 
