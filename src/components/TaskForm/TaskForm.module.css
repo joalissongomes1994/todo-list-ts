@@ -39,3 +39,14 @@
 .addTaskForm button:hover {
   background: var(--blue);
 }
+
+@media (max-width: 425px) {
+  .addTaskForm {
+    flex-direction: column;
+  }
+
+  .addTaskForm button {
+    width: 100%;
+    justify-content: center;
+  }
+}

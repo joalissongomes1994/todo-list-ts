@@ -34,3 +34,10 @@
   gap: 0.625rem;
   margin-left: 0.6rem;
 }
+
+@media (max-width: 425px) {
+  .headerList {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
