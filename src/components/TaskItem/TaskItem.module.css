@@ -1,12 +1,11 @@
 .contentItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   border: 1px solid var(--gray-400);
   background: var(--gray-500);
-  min-height: 4.5rem;
   border-radius: 8px;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .contentItem + .contentItem {
@@ -24,8 +23,8 @@
 .isChecked {
   background: var(--gray-100);
   color: var(--purple);
-  width: 24px;
-  height: 24px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   transition: color 0.2s;
 }
@@ -37,8 +36,8 @@
 .isNotChecked {
   background: transparent;
   color: var(--blue);
-  width: 24px;
-  height: 24px;
+  width: 1.25rem;
+  height: 1.25rem;
   border-radius: 50%;
   transition: color 0.2s;
 }
