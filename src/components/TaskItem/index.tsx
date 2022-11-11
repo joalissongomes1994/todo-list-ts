@@ -3,16 +3,22 @@ import {BsFillCheckCircleFill, BsCircle, BsTrash} from "react-icons/bs"
 import { ITask } from "../../types";
 interface ITaskProps {
   taskData: ITask,
-  onHandleClickComplete: (id: string) => void
+  onHandleClickComplete: (id: string) => void,
+  onHandleClickDelete: (id: string) => void
 }
 
 export function TaskItem({ 
     taskData: { id, isComplete, title}, 
-    onHandleClickComplete 
+    onHandleClickComplete,
+    onHandleClickDelete
   }: ITaskProps) {
 
   function handleClickComplete() {
     onHandleClickComplete(id);
+  }
+
+  function handleClickDelete() {
+    onHandleClickDelete(id);
   }
 
   return(
@@ -31,7 +37,7 @@ export function TaskItem({
         </p>
       </div>
       
-      <button className={style.buttonTrash}>
+      <button className={style.buttonTrash} onClick={handleClickDelete}>
         <BsTrash size={20}/>
       </button>   
     </div>

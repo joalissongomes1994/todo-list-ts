@@ -30,6 +30,11 @@ export function Todo() {
     setTasks(newTasks);
   }
 
+  function handleClickDelete(id: string) {
+    const newTasks = tasks.filter(item => item.id !== id);
+    setTasks(newTasks)
+  }
+
   return(
     <div className={style.container}>
       <TaskForm onHandleCreateTask={handleCreateTask} />
@@ -53,6 +58,7 @@ export function Todo() {
             key={task.id} 
             taskData={task}
             onHandleClickComplete={handleClickComplete}
+            onHandleClickDelete={handleClickDelete}
           />
         ))
       }
