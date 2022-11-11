@@ -19,7 +19,7 @@ desenvolvimento da capacidade de resolução da problemática e outros.
 ## Preview Desktop
 <div>
   <div align="center">
-    <img width="600px" src="https://github.com/joalissongomes1994/todo-list-ts/blob/main/src/assets/imgReadme/Captura%20de%20Tela%202022-11-11%20%C3%A0s%2015.46.27.png" style={{marginBottom: "20px"}}>
+    <img width="600px" src="https://github.com/joalissongomes1994/todo-list-ts/blob/main/src/assets/imgReadme/Captura%20de%20Tela%202022-11-11%20%C3%A0s%2015.46.27.png">
   </div>
   <div align="center">
     <img width="600px" src="https://github.com/joalissongomes1994/todo-list-ts/blob/main/src/assets/imgReadme/Captura%20de%20Tela%202022-11-11%20%C3%A0s%2015.49.46.png">
@@ -58,9 +58,9 @@ ou
 $ npm install
 
 # Executando o Projeto
-$ yarn start 
+$ yarn dev
 ou
-$ npm run start
+$ npm run dev
 
 # Acesse http://localhost:3000 no seu navagador
 ```
